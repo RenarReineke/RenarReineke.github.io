@@ -1,0 +1,89 @@
+@import "@styles/fonts.scss";
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+@import "@styles/placeholders.scss";
+
+@import "@components/buttons.scss";
+@import "@components/watch/navigate.scss";
+@import "@components/watch/header.scss";
+@import "@components/watch/watch.scss";
+@import "@components/backstage.scss";
+@import "@components/animalsCard.scss";
+@import "@components/friend.scss";
+@import "@components/testimonials.scss";
+@import "@components/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @extend %main_text;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  @extend %h2_title;
+}
+
+h3 {
+  @extend %h3_title;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button {
+  @extend %buttons_text;
+  border: none;
+  text-transform: uppercase;
+}
+
+.logo {
+  display: block;
+  width: 82px;
+  height: 52px;
+  border: 0.5px solid $white;
+
+  font-size: 19.0145px;
+  line-height: 120%;
+  color: $white;
+
+  text-align: center;
+
+  background-image: url("@icons/bamboo.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1158px;
+}

@@ -1,0 +1,249 @@
+@import "@styles/fonts.scss";
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+@import "@styles/placeholders.scss";
+
+@import "@components/buttons.scss";
+@import "@components/watch/navigate.scss";
+@import "@components/watch/header.scss";
+@import "@components/watch/watch.scss";
+@import "@components/backstage.scss";
+@import "@components/animalsCard.scss";
+@import "@components/friend.scss";
+@import "@components/testimonials.scss";
+@import "@components/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @extend %main_text;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  @extend %h2_title;
+}
+
+h3 {
+  @extend %h3_title;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button {
+  @extend %buttons_text;
+  border: none;
+  text-transform: uppercase;
+}
+
+.logo {
+  display: block;
+  width: 82px;
+  height: 52px;
+  border: 0.5px solid $white;
+
+  font-size: 19.0145px;
+  line-height: 120%;
+  color: $white;
+
+  text-align: center;
+
+  background-image: url("@icons/bamboo.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1158px;
+}
+
+.watch {
+  height: 470px;
+  background-position: 0 50%;
+}
+
+.friend {
+  padding-top: 40px;
+  padding-bottom: 180px;
+
+  h3 {
+    @extend %h3_title;
+  }
+
+  & .title-1 {
+    margin-bottom: 10px;
+    color: $white;
+  }
+
+  & .title-2 {
+    margin-bottom: 60px;
+    color: $pick_color;
+  }
+
+  & .main_text {
+    margin-bottom: 40px;
+    @extend %main_text;
+    font-weight: 500;
+    color: $white;
+  }
+
+  .friend__container {
+    min-height: 987px;
+    .friend_text_1 {
+      margin-bottom: 60px;
+    }
+
+    .amount {
+      width: 976px;
+      min-height: 511px;
+
+      .panda {
+        margin: 0 auto;
+        margin-bottom: 80px;
+        padding-top: 200px;
+        width: 516px;
+        height: 250px;
+
+        background-image: url("@icons/panda_big.svg"),
+          url("@icons/amount_donate.svg"), url("@icons/x_icon.svg");
+        background-repeat: no-repeat;
+        background-position: right, 35px 130px, 160px 155px;
+
+        color: $black_blue;
+      }
+
+      .subtitle {
+        margin-bottom: 10px;
+        color: $black;
+      }
+
+      .progress_bar {
+        margin-bottom: 6px;
+        width: 100%;
+        height: 40px;
+
+        background-image: url("@images/progress_bar.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .price {
+        margin-bottom: 50px;
+        width: 100%;
+        height: 36px;
+
+        background-image: url("@images/price.png");
+        background-repeat: no-repeat;
+        background-position: 1px center;
+      }
+
+      .amount__form {
+        margin: 0 auto;
+        width: 268px;
+        .amount__number {
+          margin: 0 auto;
+          margin-bottom: 26px;
+          padding: 17px;
+          padding-left: 9px;
+
+          width: 268px;
+          height: 54px;
+
+          outline: none;
+          border: 1px solid $input_text;
+          border-radius: 2px;
+
+          color: $input_text;
+
+          background-image: url("@icons/dollar_icon.svg");
+          background-repeat: no-repeat;
+          background-position: right 17px center;
+          background-color: transparent;
+
+          /* Chrome, Safari, Edge, Opera */
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          /* Firefox */
+          &[type="number"] {
+            -moz-appearance: textfield;
+          }
+        }
+
+        .amount__radio-list {
+          margin: 0 auto;
+          margin-bottom: 33px;
+          width: 207px;
+
+          .amount__radio-item {
+            appearance: none;
+
+            margin-right: 10px;
+            width: 16px;
+            height: 16px;
+            outline: none;
+            border: 1px solid $pick_color;
+            border-radius: 50%;
+            transition: 0.2s all linear;
+
+            &:checked {
+              border: 8px solid $green;
+            }
+          }
+
+          label {
+            &:first-of-type {
+              margin-right: 50px;
+            }
+          }
+        }
+      }
+    }
+
+    .friend__button {
+      margin-bottom: 30px;
+    }
+
+    .friend__share {
+      margin: 0 auto;
+      margin-bottom: 62px;
+      width: 301px;
+      color: $black_blue;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "@styles/fonts.scss";
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+@import "@styles/placeholders.scss";
+
+.button {
+  width: 298px;
+  min-height: 54px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $orang;
+  color: $white;
+  text-transform: uppercase;
+
+  @extend %buttons_text;
+
+  &:hover {
+    background-color: $orang_dark;
+  }
+
+  &:active {
+    background-color: $green;
+  }
+
+  &:disabled {
+    background-color: $gray;
+  }
+}
+
+.button--circle {
+  @include button_border_radius_mixin(25px);
+}
+
+.button--quadro {
+  @include button_border_radius_mixin(5px);
+}

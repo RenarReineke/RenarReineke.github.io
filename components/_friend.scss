@@ -1,0 +1,103 @@
+@import "@styles/variables.scss";
+
+.friend {
+  background-color: $pink_grad;
+  padding-top: 69px;
+  padding-bottom: 100px;
+
+  .friend__container {
+    padding-top: 41px;
+    padding-bottom: 59px;
+    padding-left: 99px;
+    padding-right: 61px;
+
+    height: 835px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(2px);
+    background: rgba(253, 253, 255, 0.52);
+
+    h2 {
+      margin-bottom: 30px;
+      color: $pick_color;
+      text-align: center;
+    }
+
+    .friend_text_1 {
+      margin-bottom: 40px;
+    }
+
+    .friend_text_2 {
+      margin-bottom: 10px;
+    }
+
+    .friend_text_3 {
+      margin-bottom: 60px;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    h3 {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .payment {
+      margin: 0 auto;
+      margin-bottom: 60px;
+      width: 764px;
+      height: 244px;
+
+      display: grid;
+      grid-template-columns: 168px 130px 168px 130px 168px;
+
+      .pay {
+        &:first-child {
+          .pay-image {
+            background-image: url("@icons/pay.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+
+        &:nth-child(3) {
+          .pay-image {
+            background-image: url("@icons/zoo.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+
+        &:last-child {
+          .pay-image {
+            background-image: url("@icons/monkey.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+
+      .pay-image {
+        margin-bottom: 30px;
+        width: 168px;
+        height: 168px;
+        border: 1px solid $orang;
+        border-radius: 5px;
+        background-color: $white;
+      }
+
+      .arrow-pay {
+        height: 168px;
+        background-image: url("@icons/arrow-friend.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .friend__button {
+      margin: 0 auto;
+    }
+  }
+}

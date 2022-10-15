@@ -1,0 +1,47 @@
+@import "@styles/variables.scss";
+@import "@components/buttons.scss";
+
+.watch {
+  height: 780px;
+  background-image: url("@images/Panda.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.watch__content {
+  position: relative;
+  top: 12px;
+  left: calc(100% - 565px);
+  width: 565px;
+  height: 588px;
+
+  .watch__content__text {
+    position: absolute;
+    top: 74px;
+    right: 0;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 900;
+    font-size: 105px;
+    line-height: 80%;
+
+    text-align: center;
+
+    span {
+      color: $yellow;
+    }
+  }
+
+  .watch__content__circle {
+    width: 465px;
+    height: 465px;
+    border-radius: 100%;
+    background-color: $orang;
+  }
+
+  .watch__content__button {
+    margin-top: 69px;
+    margin-left: 176px;
+  }
+}

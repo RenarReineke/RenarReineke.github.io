@@ -1,0 +1,149 @@
+@import "@styles/variables.scss";
+
+.footer {
+  height: 443px;
+  background-color: $footer_color;
+
+  .footer__container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 404px;
+    grid-template-rows: 100% 1fr;
+
+    .footer__social {
+      margin-right: 101px;
+      .footer__logo {
+        margin-bottom: 68px;
+      }
+
+      .footer__social--button {
+        margin-bottom: 44px;
+      }
+
+      .footer__social--list {
+        width: 120px;
+
+        .footer__social--item {
+          margin-bottom: 10px;
+
+          padding-left: 12px;
+          height: 26px;
+
+          display: flex;
+          align-items: center;
+
+          color: $white;
+
+          & .icon {
+            margin-right: 12px;
+            width: 26px;
+            height: 26px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+          }
+
+          & .icon_1 {
+            background-image: url("@icons/facebook_icon.svg"),
+              url("@icons/Ellipse.svg");
+          }
+
+          & .icon_2 {
+            background-image: url("@icons/twitter_icon.svg"),
+              url("@icons/Ellipse.svg");
+          }
+
+          & .icon_3 {
+            background-image: url("@icons/instagram_icon.svg"),
+              url("@icons/Ellipse.svg");
+          }
+
+          & .icon_4 {
+            background-image: url("@icons/youtube_icon.svg"),
+              url("@icons/Ellipse.svg");
+          }
+
+          & .text {
+            line-height: 26px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .footer__navigate {
+      & .nav {
+        margin: 0 auto;
+        width: 362px;
+        align-items: flex-end;
+        color: $white;
+      }
+    }
+
+    .footer__subscribe {
+      padding-left: 32px;
+      color: $white;
+
+      & .subtitle {
+        margin-bottom: 14px;
+        @extend %subtitle;
+      }
+
+      & form {
+        margin-bottom: 216px;
+        width: 100%;
+        height: 42px;
+
+        input {
+          margin-right: 10px;
+          padding-left: 10px;
+
+          width: 228px;
+          height: 100%;
+
+          border: 0.7px solid $orang;
+          border-radius: 2px;
+
+          outline: none;
+
+          color: inherit;
+
+          background-color: transparent;
+
+          &::placeholder {
+            color: inherit;
+          }
+        }
+
+        button {
+          width: 129px;
+          height: 42px;
+
+          border: 1px solid #4b9200;
+          border-radius: 5px;
+
+          background-color: $light_gray;
+          color: $green;
+
+          text-transform: none;
+        }
+      }
+
+      p {
+        &:nth-child(3) {
+          margin-bottom: 10px;
+          text-align: right;
+
+          font-weight: 100;
+          line-height: 130%;
+        }
+      }
+    }
+  }
+}

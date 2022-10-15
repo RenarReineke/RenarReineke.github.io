@@ -1,0 +1,28 @@
+.backstage {
+  margin-top: 140px;
+  margin-bottom: 180px;
+
+  background-image: url("@images/flower_1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+
+  .backstage__container {
+    height: 403px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .backstage__image {
+      width: 609px;
+      height: 100%;
+
+      background-image: url("@images/bamboocap.jpg");
+    }
+
+    .backstage__text {
+      padding-left: 87px;
+      width: calc(100% - 403px);
+    }
+  }
+}

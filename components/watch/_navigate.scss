@@ -1,0 +1,17 @@
+@import "@styles/variables.scss";
+
+.nav {
+  width: 472px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 58px;
+}

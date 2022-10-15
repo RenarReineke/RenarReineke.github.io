@@ -1,0 +1,16 @@
+@import "@styles/variables.scss";
+@import "@styles/placeholders.scss";
+
+.header {
+  height: 80px;
+  background-color: $black;
+  color: $white;
+  font-weight: 900;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}

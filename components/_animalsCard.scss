@@ -1,0 +1,155 @@
+@import "@styles/variables.scss";
+@import "./buttons";
+
+.animals-card {
+  padding-bottom: 100px;
+
+  background-image: url("@images/strelitzia.png"), url("@images/palm.png");
+  background-repeat: no-repeat;
+  background-position: right bottom, left bottom;
+  background-size: 368px 275px, 292px 460px;
+
+  .animals-card__container {
+    position: relative;
+
+    .animals-card__arrow-right {
+      position: absolute;
+      top: 403px;
+      right: -76px;
+      width: 62px;
+      height: 62px;
+      border-radius: 100%;
+      background-color: $orang;
+
+      background-image: url("@icons/arrow_right-white.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        background-color: $orang_dark;
+      }
+
+      &:active {
+        background-color: $green;
+      }
+
+      &:disabled {
+        background-color: $gray;
+      }
+    }
+
+    .animals-card__arrow-left {
+      position: absolute;
+      top: 403px;
+      left: -76px;
+      width: 62px;
+      height: 62px;
+      border-radius: 100%;
+      background-color: $orang;
+
+      background-image: url("@icons/arrow_left-white.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        background-color: $orang_dark;
+      }
+
+      &:active {
+        background-color: $green;
+      }
+
+      &:disabled {
+        background-color: $gray;
+      }
+    }
+  }
+
+  .animals-card__list {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+
+    .card {
+      width: 366px;
+      height: 426px;
+      border: 1px solid $orang_dark;
+      border-radius: 5px;
+
+      .card__image {
+        width: 100%;
+        height: 366px;
+      }
+
+      .card__info {
+        position: relative;
+        margin-top: 8px;
+        margin-bottom: 14px;
+        margin-left: 16px;
+
+        h4 {
+          text-transform: uppercase;
+        }
+
+        .card__info__icon_banan {
+          position: absolute;
+          top: 2px;
+          right: 12px;
+          width: 33px;
+          height: 37px;
+          background-image: url("@icons/banana-bamboo_icon.svg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+
+        .card__info__icon_fish {
+          position: absolute;
+          top: 0;
+          right: 14px;
+          width: 48px;
+          height: 38px;
+          background-image: url("@icons/meet-fish_icon.svg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+        }
+      }
+
+      .card__image-1 {
+        background-image: url("@images/card_pandas.jpg");
+        background-size: cover;
+      }
+
+      .card__image-2 {
+        background-image: url("@images/eagles.jpg");
+        background-size: cover;
+      }
+
+      .card__image-3 {
+        background-image: url("@images/gorillas.jpg");
+        background-size: cover;
+      }
+
+      .card__image-4 {
+        background-image: url("@images/sloth.jpg");
+        background-size: cover;
+      }
+
+      .card__image-5 {
+        background-image: url("@images/chetahs.jpg");
+        background-size: cover;
+      }
+
+      .card__image-6 {
+        background-image: url("@images/penguins.jpg");
+        background-size: cover;
+      }
+    }
+  }
+
+  .button_animals_card {
+    margin: 0 auto;
+  }
+}
